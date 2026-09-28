@@ -701,6 +701,20 @@ width: 38px;
 height: 38px;
 }
 }
+
+/* ===== Font consistency + bold answers ===== */
+button, input, textarea { font-family: inherit; }
+body.lang-ar .badge-pill,
+body.lang-ar .btn,
+body.lang-ar .summary-label,
+body.lang-ar .summary-value,
+body.lang-ar .form-input,
+body.lang-ar .form-textarea {
+font-family: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+.form-input, .form-textarea { font-weight: 700; }
+.form-input::placeholder, .form-textarea::placeholder { font-weight: 400; }
+body.lang-ar .summary-value:not(.empty) { font-weight: 700; }
 </style>
 </head>
 <body class="lang-ar">
